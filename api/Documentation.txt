@@ -1,0 +1,81 @@
+--------------------Project-------------------------
+Create Project
+    url : http://localhost:3001/project/add
+    header : clientid
+    body : {
+                {
+                    "title":"Alphazene",
+                    "Company_name":"Alphazene Solution",
+                    "Onwer_name":"Jack",
+                    "email":"jack@gmail.com",
+                    "phone":"9876543210",
+                    "address":"Coimbatore"
+                }
+            }
+
+View All-Project
+    Url : http://localhost:3001/project/viewall
+
+View Single-Project
+    url : http://localhost:3001/project/view/Projectid
+
+Delete Single-Project
+    url : http://localhost:3001/project/delete/id
+
+Update Single-Project
+    url : http://localhost:3001/project/Update
+    header : projectid
+
+--------------------Task------------------------
+
+Create Task
+    url : http://localhost:3001/task/add
+    header : projectid,clientid
+    body :{
+            {
+                "title":"Java",
+                "handle":"Jack",
+                "lastdate":"2021-06-06",
+                "startdate":"2021-05-27"
+            }
+        }
+
+View All-Task
+    Url : http://localhost:3001/task/viewall
+
+View Single-Task
+    url : http://localhost:3001/task/view/id
+
+Delete Single-Task
+    url : http://localhost:3001/task/delete/id
+
+Update Single-Task
+    url : http://localhost:3001/task/Update
+    header : taskid
+
+
+---------------------ProjectUser-------------------------------
+
+Create ProjectUser
+    url : http://localhost:3001/projectuser/add
+    header : projectid
+    body :{
+            {
+                "title":"Alphazene solutions",
+                "createby":"mathesh",
+                "clientid":"1622099626005"
+            }
+        }
+
+View All-ProjectUser
+    Url : http://localhost:3001/projectuser/viewall
+
+View Single-ProjectUser
+    url : http://localhost:3001/projectuser/view/id
+
+Delete Single-ProjectUser
+    url : http://localhost:3001/projectuser/delete/id
+
+Update Single-ProjectUser
+    url : http://localhost:3001/projectuser/Update
+    header : projectid
